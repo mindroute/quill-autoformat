@@ -1,6 +1,6 @@
 {
   "name": "quill-autoformat",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Quill Extension for transforming text and format as you type",
   "main": "dist/quill-autoformat.js",
   "repository": {
