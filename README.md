@@ -4,6 +4,8 @@ Out of the box support for:
 - Links
 - Hashtags
 - Mentions
+
+*Note: Requires Quill 2.0*
  
 ## Usage
 To add quill-autoformat to your Quill, simply add the javascript after quill or import it in your project. Use the provided quill-formats or define your own parchments.
