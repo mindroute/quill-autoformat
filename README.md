@@ -29,17 +29,17 @@ To add quill-autoformat to your Quill, simply add the javascript after quill or 
 ```
 
 ## Transforms
-You can specify how many transforms as you like, just give each transform a unique name. Three transforms are enabled by default; hashtag, mention and link. Just set the default types to false to disable them or change any property you like to a custom value.
+You can specify as many transforms as you like, just give each transform a unique name. Three transforms are enabled by default; hashtag, mention and link. Just set the default types to false to disable them or change any property you like to a custom value.
 
 Each transform may have the following properties:
 
 ```javascript
 transform: {
-   trigger:     RegExp // RegExp for matching text input characters to trigger the match. Defaults to /./ which is matching any character
-   find:        RegExp // Global RegExp to search for in the text
-   extract:     RegExp // Additional RegExp to finetune and override the found text match
-   transform:   String || function // String or function passed to String.replace() to rewrite find/extract results
-   insert:      String || {...} // Insert name string or embed insert object.
+   trigger:     RegExp, // RegExp for matching text input characters to trigger the match. Defaults to /./ which is matching any character
+   find:        RegExp, // Global RegExp to search for in the text
+   extract:     RegExp, // Additional RegExp to finetune and override the found text match
+   transform:   String || Function, // String or function passed to String.replace() to rewrite find/extract results
+   insert:      String || {...}, // Insert name string or embed insert object.
    format:      String || {...} // Format name string or attributes object.
  }
 ```
