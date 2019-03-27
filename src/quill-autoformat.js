@@ -5,6 +5,10 @@ import Mention from './formats/mention';
 
 import Autoformat, { AutoformatHelperAttribute } from './modules/autoformat';
 
+if(Quill.version && parseInt(Quill.version[0]) < 2) {
+  console.warn("quill-autoformat requires Quill 2.0 or higher to work properly")
+}
+
 Quill.register({
   'modules/autoformat': Autoformat,
   'formats/hashtag': Hashtag,
